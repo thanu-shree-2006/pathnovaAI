@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PathNova AI - Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>PathNova AI</h1>
+        <p class="welcome-text">Welcome, {{ name }} 👋</p>
+
+        <div class="card-grid">
+            <a href="/profile" class="card">My Profile</a>
+            <a href="#" class="card">Resume</a>
+            <a href="#" class="card">Daily Test</a>
+            <a href="#" class="card">Skills</a>
+            <a href="#" class="card">Mock Interview</a>
+            <a href="#" class="card">Feedback & Progress</a>
+        </div>
+
+        <a href="/logout">
+            <button class="logout-btn">Logout</button>
+        </a>
+    </div>
+</body>
+</html>
